@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Home page</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-md-6 offset-md-3">
+            <h3>Add Employee Personal Details</h3>
+            <form (ngSubmit)="onSubmit()">
+                <!-- <form> -->
+                    <div class="container">
+                        <div class="form-group">
+                            <label>Employee ID</label>
+                            <input type="text" class="form-control" id="employee_id" [(ngModel)]="personal.employee_id"
+                                name="employee_id">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Address</label>
+                            <input type="text" class="form-control" id="address" [(ngModel)]="personal.address"
+                                name="address">
+                        </div>
+
+                        <div class="form-group">
+                            <label>LocationId</label>
+                            <input type="text" class="form-control" id="location_id" [(ngModel)]="personal.location_id"
+                                name="location_id">
+                        </div>
+
+                        <div class="form-group">
+                            <label>PinCode</label>
+                            <input type="password" class="form-control" id="pin" [(ngModel)]="personal.pin" name="pin">
+                        </div>
+
+                        <div class="form-group">
+                            <label>PhoneNo</label>
+                            <input type="drop-down" class="form-control" id="phone" [(ngModel)]="personal.phone"
+                                name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label>AlternatePhoneNo</label>
+                            <input type="text" class="form-control" id="alternate_phone"
+                                [(ngModel)]="personal.alternate_phone" name="alternate_phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <input type="text" class="form-control" id="gender" [(ngModel)]="personal.gender"
+                                name="gender">
+                        </div>
+
+                        <div class="form-group">
+                            <label>CountryId</label>
+                            <input type="text" class="form-control" id="country_id" [(ngModel)]="personal.country_id"
+                                name="country_id">
+                        </div>
+
+                        <div class="form-group">
+                            <label>EmailId</label>
+                            <input type="text" class="form-control" id="email_id" [(ngModel)]="personal.email_id"
+                                name="email_id">
+                        </div>
+
+                        <div class="form-group">
+                            <label>DateOfBirth</label>
+                            <input type="text" class="form-control" id="date_of_birth"
+                                [(ngModel)]="personal.date_of_birth" name="date_of_birth">
+                        </div>
+
+                        <div class="form-group">
+                            <label>MaritalStatus</label>
+                            <input type="text" class="form-control" id="marital_status"
+                                [(ngModel)]="personal.marital_status" name="marital_status">
+                        </div>
+
+                        <button class="btn btn-success" type="submit"> Submit </button>
+                    </div>
+                </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
