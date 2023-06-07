@@ -6,7 +6,8 @@ export class EmployeePersonalDetails {
        
         location_id : number;
        
-       
+        location_name: string;
+        
         pin : number;
        
        
